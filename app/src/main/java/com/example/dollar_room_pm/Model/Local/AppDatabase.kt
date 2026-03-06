@@ -1,9 +1,11 @@
-package com.example.dollar_room_pm.Model
+package com.example.dollar_room_pm.Model.Local
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.example.dollar_room_pm.Model.Local.DollarTransactionDao
+import com.example.dollar_room_pm.Model.Local.DollarTrasanction
 
 @Database( entities = [DollarTrasanction::class], version = 1)
 abstract class AppDatabase : RoomDatabase() {
